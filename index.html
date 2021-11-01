@@ -1,5 +1,108 @@
 <html>
 <body>
-<h1>Mac git setup test push</h1>
+<h1>What is DBMS?</h1>
+<ul>
+  <li><h4>Database management system is a software that acts as an interface ,which allows us to perform various operations like databse creation,storing data in it,updating data ,creating table in datbase and lot more</h4></li>
+  <li><h4>It provides security and protection to the database .In the case of multiple users ,it also maintains data consistency.</h4></li>
+</ul>
+<h1>what does dbms allows?</h1>
+<ul>
+  <li><h4>Data definition : it is used for creation , modification and removal of definition that defines the organization of data in the database.</h4></li>
+  <li><h4>Data Updation : it is used for the insertion ,deletion and modification of the data in database.</h4></li>
+  <li><h4>Data retrieval : it is used to retrieve data from the database which can be used by aplications for various purposes.</h4></li>
+  <li><h4>User Administration : it is used for registering and monitoring users , maintain data integrity ,enforcing data security,dealing with concurrency control ,monitoring performance and recovering information courrupted by unexpected faliure.</h4></li>
+</ul>
+<h1>what is SQL?</h1>
+<ul>
+  <li><h4>SQL is structured query language.</h4></li>
+  <li><h4>It is used to make queries to the any particular database management system , like oracle mysql, clear DB etc.</h4></li>
+  <li><h4>it is used to manage relational databases and perform operations on data.</h4></li>
+  <li><h4>operations like data retrieval , data deletion ,data updation can be accomplished by SQL.</h4></li>
+</ul>
+<h1>What is postgreSQL?</h1>
+<ul>
+  <li><h4>postgreSql is an advanced enterprise class open source relational dbms thatc supports both SQL and json querying (non relational).</h4></li>
+  <li><h4>it is highly stable dbms.</h4></li>
+  <li><h4>PostgreSQL supports vertical scalablity and can run on bigger and faster machines to increase performnace. However when it comes to horizontal scalablity ,it does not have many options. However it provides truly feasiable options to achieve that.</h4></li>
+</ul>
+<h1>what are main features of PostgreSQL?</h1>
+<ul>
+  <li><h4>User defined datatypes.</h4></li>
+  <li><h4>Tbale inheritance.</h4></li>
+  <li><h4>sophisticated locking mechanism.</h4></li>
+  <li><h4>Foreign Key refrential integrity.</h4></li>
+  <li><h4>views,rules,subquerying</h4></li>
+  <li><h4>nested transactions(save points)</h4></li>
+  <li><h4>multiversion concurrency control(mvcc)</h4></li>
+  <LI><H4>Asynchronous replication</H4></LI>
+</ul>
+<h1>what are categories of SQL Commands?</h1>
+<ul>
+  <li><h4>Data definition language (DDL) : These SQL commands are used to create ,modify and drop the structure of database objects like table , view ,procedure ,indexes etc . In this category we have CREATE ,ALTER ,DROP and TRUNCATE commands. </h4></li>
+  <li><h4>Data Manipulation Language(dml): These SQL commands are used to store ,modify and delete data from database tables. In this category we INSERT ,UPDATE and DELETE commands.</h4></li>
+  <li><h4>Transaction Control Language(TCL) : These sql commands are used to handle changes which affect the data in database. Basically we use these commands with in the transaction or to make a stable point, during changes in the database at which we can SAVEPOINT,ROLLBACK and COMMIT commands.</h4></li>
+  <li><h4>Data Control Language (DCL) : THese SQL commands are used to implemnt security database objects like table ,view ,stored procedure etc. In this category we have GRANT and REVOKE commands.</h4></li>
+</ul>
+<h1>What are ER diagrams?</h1>
+<ul>
+  <li><h4>ER or entity relationship diagrams are used to model the logical view of the system from data prespective which consists of entity,entity type,entity set. An entity may be an object with physical existence -a particular person ,car ,house or employee. Or it can be an object with a conceptual existence - a company,a job or a university course.  </h4></li>
+  <li><h4>Entity set means group of similar entities , for examaple class of students , here the entity is student.</h4></li>
+  <li><h4>Entity realationship diagrams show relationships between entities.</h4></li>
+  <li><h4><b>Types of relationships :</b></h4></li>
+  <ul>
+    <li><h4>One to One Relationship : when each entity set can take part only once in the relation ship, the cardinality is one to one. Let us assume that a male can marry to one female and a female can marry to one male. So this relationship can be one to onel.</h4></li>
+    <li><h4>Many to one : when entities in other entity set can take part more than once in the relationship set. For example many students get enrolled in many courses.</h4></li>
+    <li><h4>Many to many : when entities in all sets can take part more than once in the relationship. For example many students can enroll in many courses. </h4></li>
+  </ul>
+</ul>
+<h1>what are Entity and attributes ?</h1>
+<ul>
+  <li><h4>Entity : entity cam be any object such as a person, a company or a conceptual concept. It can have various attributes.</h4></li>
+  <li><h4>Attributes : attributes are key features of any entity , those attributes may be unique id, the entity's name or last name or anyhting that defines that entity.</h4></li>
+</ul>
+<h1>what are keys in database?</h1>
+<ul>
+  <li><h4>key values in database can be attributes or set of attributes that can uniquely identify any row or record in any given table present in any database.</h4></li>
+  <li><b>types of keys :</b></li>
+  <ul>
+    <li><h4>Primary key : primary key can be one coulmn or a set of columns which uniquely identify any record in a table. The primary key values for a particular record should be different and they can not be null.</h4></li>
+    <li><h4>Candidate key : candidate keys are those columns ,out of which one can be picked as a primary key , hence they act candidates for potential primary keys.</h4></li>
+    <li><h4>Super key : super keys are are basically superset of candidate keys , they are all the unique combinations or tuples of all the candidate keys. </h4></li>
+    <ul>
+      <li><h4>Example of super key :</h4></li>
+      <table border="1px" style="text-align: center;">
+        <tr>
+          <th><h4><b>emp_id</b></h4></th>
+          <th><h4><b>emp_name</b></h4></th>
+          <th><h4><b>emp_sal</b></h4></th>
+          <th><h4><b>emp_email</b></h4></th>
+        </tr>
+        <tr>
+          <td><h4>1</h4></td>
+          <td><h4>Raj</h4></td>
+          <td><h4>50000</h4></td>
+          <td><h4>raj@email.com</h4></td>
+        </tr>
+        <tr>
+          <td><h4>2</h4></td>
+          <td><h4>Rahul</h4></td>
+          <td><h4>50000</h4></td>
+          <td><h4>rahul@email.com</h4></td>
+        </tr>
+        <tr>
+          <td><h4>3</h4></td>
+          <td><h4>Ravi</h4></td>
+          <td><h4>50000</h4></td>
+          <td><h4>ravi@email.com</h4></td>
+        </tr>
+      </table>
+      <h4><p>
+        here super key subset would be {emp_id,emp_name,emp_email,{emp_name,emp_id},{emp_id,emp_email},{emp_email,emp_name}}.
+        <h4>Note : here emp_name is unique hence its included in the super key subset.</h4>
+      </p></h4>
+    </ul>
+    <li><h4>Foreign key : foreign key is that value or attribute which is common accross tables and can be used to reference data from interlinked tables. There can be multiple foreign keys in any table. foreigm keys cant be null.</h4></li>
+  </ul>
+</ul>
 </body>
 </html>
